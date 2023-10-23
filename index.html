@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>App</title>
+	<meta charset="utf-8">
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/c9f5871d83.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+
+    <audio id="Ben10" src="sonidos/Ben 10 Opening 1 Castellano de España HD.mp3"></audio>
+    <audio id="InazumaEleven" src="sonidos/Opening Inazuma Eleven Castellano  Canción inicial de Inazuma Eleven.mp3"></audio>
+    <audio id="PhineasYFerb" src="sonidos/Phineas y Ferb - Intro Castellano (HD).mp3"></audio>
+
+	<div class="cabecera">
+		<h1 id="tituloCancion">Ben 10</h1>
+	</div>
+
+<div class="imagenContainer">
+	<div class="imagen">
+		<img src="imagenes/BEN 10.jpg" alt="" class="ben10">
+		<img src="imagenes/InazumaEleven.jpg" alt="" class="inazumaEleven">
+		<img src="imagenes/PhineasYFerb.jpg" alt="" class="phineas">
+	</div>
+</div>
+
+<div class="tiempo">
+    <input type="range" id="sliderTiempo" min="0" value="0">
+	<div class="timers">
+    <span id="current-time">00:00</span>
+    <span id="song-duration">3:45</span>
+</div>
+</div>
+
+<div class="botones">
+	<div class="botonesDeto">
+    <p id="random-button" class="bx bx-shuffle"></p>
+    <p id="previous-button" class="bx bx-skip-previous"></p>
+    <p id="play-button" class="bx bx-play" style="display: inline-block;"></p>
+    <p id="pause-button" class="bx bx-pause" style="display: none;"></p>
+    <p id="next-button" class="bx bx-skip-next"></p>
+</div>
+<div class="volumen">
+    <p id="volume-button" class="bx bxs-volume-full"></p>
+    <input class="barraVolumen" type="range" min="0" max="100" value="50" id="sliderVolumen">
+</div>
+</div>
+
+
+
+	<div id="contenedor">
+
+	</div>
+</body>
+</html>

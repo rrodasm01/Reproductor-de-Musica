@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    --imagen-width: 200px; /* Aumenta el ancho de las imágenes */
+    --imagen-height: 200px; /* Aumenta la altura de las imágenes */
+    background-image: url(imagenes/fondoFinal.png);
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-size: cover; /* Escala la imagen para cubrir todo el fondo */
+  background-attachment: fixed;
+}
+
+.imagenContainer {
+    width: var(--imagen-width);
+    height: var(--imagen-height);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.imagen {
+    display: flex;
+    width: 3000px; /* Ajusta el ancho del contenedor de imágenes en consecuencia */
+    transition: transform 0.0s;
+    cursor: pointer;
+}
+
+.imagen img {
+    width: var(--imagen-width);
+    height: var(--imagen-height);
+}
+
+.timers {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sliderTiempo {
+    width: var(--imagen-width);
+}
+
+h2 {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    margin-left: 6px;
+    width: 188px;
+}
+
+.botonesDeto{
+    padding-left: 35px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.volumen{
+    padding-left: 15px;
+}
+
+.bx{
+    font-size: 24px;
+}
